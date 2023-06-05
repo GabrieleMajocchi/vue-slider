@@ -62,16 +62,10 @@ div.next-button{
 }
 
 .carousel-item{
-    display: none;
     height: 100%;
-    opacity: 0;
 }
 
-.carousel-item.active{
-    display: block;
-    opacity: 1;
-    transition: opacity 3s;
-}
+
 
 div.carousel-item img{
     width: 100%;
