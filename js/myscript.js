@@ -39,5 +39,42 @@ createApp({
                 this.activeIndex++;
             }
         },
+        activateImage(imageindex){
+            this.activeIndex = imageindex;
+        }
     }
 }).mount('#app');
+
+
+
+
+
+// // ---Adding timed function---
+// let timer = setInterval (next, 3000);
+
+// // ---Adding stop to timed function---
+// const stop = document.querySelector('.fa-stop');
+// stop.addEventListener('click', function(){
+//     clearInterval(timer);
+// });
+
+// // ---Adding play to timed function---
+// const play = document.querySelector('.fa-play');
+// play.addEventListener('click', function(){
+//     clearInterval(timer);
+//     timer = setInterval (next, 3000);
+// });
+
+// // ---Adding reverse timed function---
+// let rev = true;
+// const reverse = document.querySelector('.fa-rotate-left');
+// reverse.addEventListener('click', function(){
+//     if (rev === true){
+//         clearInterval(timer);
+//         timer = setInterval (previous, 3000);
+//         rev = false;
+//     }else{
+//         clearInterval(timer);
+//         timer = setInterval (next, 3000);
+//     }
+// });
