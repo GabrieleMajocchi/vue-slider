@@ -49,17 +49,24 @@ createApp({
         },
         playAutoplay(){
             clearInterval(this.timer);
-            this.timer = setInterval (this.next, 1000);
+            this.timer = setInterval (this.next, 3000);
         },
         reverseAutoplay(){
             if (this.rev === true){
                 clearInterval(this.timer);
-                this.timer = setInterval (this.previous, 1000);
+                this.timer = setInterval (this.previous, 3000);
                 this.rev = false;
             }else{
                 clearInterval(this.timer);
-                this.timer = setInterval (this.next, 1000);
+                this.timer = setInterval (this.next, 3000);
             }
         },
+        hoverPlayAutoplay(){
+            if (this.rev === true){
+                this.timer = setInterval (this.next, 3000);
+            }else{
+                this.timer = setInterval (this.previous, 3000);
+            }
+        }
     }
 }).mount('#app');
