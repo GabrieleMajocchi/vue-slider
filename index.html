@@ -25,18 +25,22 @@
                 <i class="fa-solid fa-stop"></i>
                 <i class="fa-solid fa-rotate-left"></i>
             </div>
-            <div class="previous-button">
+            <div class="previous-button" @click="previous()">
                 <i class="fa-solid fa-angles-left"></i>
             </div>
-            <div class="next-button">
+            <div class="next-button"  @click="next()">
                 <i class="fa-solid fa-angles-right"></i>
             </div>
             <div class="dot">
-                <div class="dots 0" id="dot0"></div>
-                <div class="dots 1" id="dot1"></div>
-                <div class="dots 2" id="dot2"></div>
-                <div class="dots 3" id="dot3"></div>
-                <div class="dots 4" id="dot4"></div>
+                <div v-for="(images, index) in images" class="dots" :class="index === activeIndex ? 'active' : ''" @click="activateImage(index)">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img :src="images[activeIndex].image" alt="Carousel slide image">
+                <div>
+                    <h4>{{images[activeIndex].title}}</h4>
+                    <p>{{images[activeIndex].text}}</p>
+                </div>
             </div>
         </div>
     </main>
