@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+
+    <!-- ----Link to fontawesome---- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- ----Link to style---- -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ----Link to myscript---- -->
+    <script src="js/myscript.js" defer></script>
+
+</head>
+<body>
+    <!-- Vue 3 -->
+    <script src="https://unpkg.com/vue@3"></script>
+    
+    <main id="app">
+        <div class="carousel">
+            <div class="play">
+                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-stop"></i>
+                <i class="fa-solid fa-rotate-left"></i>
+            </div>
+            <div class="previous-button">
+                <i class="fa-solid fa-angles-left"></i>
+            </div>
+            <div class="next-button">
+                <i class="fa-solid fa-angles-right"></i>
+            </div>
+            <div class="dot">
+                <div class="dots 0" id="dot0"></div>
+                <div class="dots 1" id="dot1"></div>
+                <div class="dots 2" id="dot2"></div>
+                <div class="dots 3" id="dot3"></div>
+                <div class="dots 4" id="dot4"></div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
