@@ -42,15 +42,12 @@ createApp({
         activateImage(imageindex){
             this.activeIndex = imageindex;
         }
+    }, 
+    mounted() {
+        let timer = setInterval (this.next, 3000);
     }
 }).mount('#app');
 
-
-
-
-
-// // ---Adding timed function---
-// let timer = setInterval (next, 3000);
 
 // // ---Adding stop to timed function---
 // const stop = document.querySelector('.fa-stop');
