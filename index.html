@@ -21,9 +21,9 @@
     <main id="app">
         <div class="carousel">
             <div class="play">
-                <i class="fa-solid fa-play"></i>
-                <i class="fa-solid fa-stop"></i>
-                <i class="fa-solid fa-rotate-left"></i>
+                <i class="fa-solid fa-play" @click="playAutoplay()"></i>
+                <i class="fa-solid fa-stop" @click="stopAutoplay()"></i>
+                <i class="fa-solid fa-rotate-left" @click="reverseAutoplay()"></i>
             </div>
             <div class="previous-button" @click="previous()">
                 <i class="fa-solid fa-angles-left"></i>
